@@ -1,5 +1,7 @@
-img, embed,
-object, video {
+img,
+embed,
+object,
+video {
   max-width: 100%;
 }
 
@@ -51,17 +53,7 @@ p {
   margin: 0;
 }
 
-.container_wrap {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto 10px auto;
-  justify-content: space-around;
-}
-
-.project_container {
-  width: 100%;
-}
-
+/* Header */
 .container {
   display: flex;
 }
@@ -77,7 +69,19 @@ p {
    text-align: right;
 }
 
+/* Project list */
 .title {
+  width: 100%;
+}
+
+.pwrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto 10px auto;
+  justify-content: space-around;
+}
+
+.pcontainer {
   width: 100%;
 }
 
@@ -90,8 +94,9 @@ p {
   box-shadow: 5px 10px 50px grey;
 }
 
+/* Responsive Layout */
 @media screen and (min-width: 475px) {
-  .project_container {
+  .pcontainer {
     width: 45%;
   }
   .logo {
@@ -104,7 +109,7 @@ p {
 }
 
 @media screen and (min-width: 650px) {
-  .project_container {
+  .pcontainer {
     width: 30%;
   }
 }
